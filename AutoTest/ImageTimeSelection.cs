@@ -9,7 +9,7 @@ namespace AutoTest
 
         private int Iteration = 20;
         private int CurrentIteration = 0;
-        private double SecondTotal = 10;
+        private double SecondTotal = 0;
         private double SecondsAverage = 0;
         private int TotalCorrect = 0;
         public bool IsFinish { get; private set; }
@@ -32,7 +32,7 @@ namespace AutoTest
         public int GetRandomNumber()
         {
             if (!this.IsFinish)
-                return new Random().Next(1, 4);
+                return new Random().Next(1, 5);
             else
                 return 0;
         }
