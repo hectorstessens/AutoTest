@@ -105,7 +105,7 @@
             Result.Location = new Point(814, 1);
             Result.Multiline = true;
             Result.Name = "Result";
-            Result.Size = new Size(560, 630);
+            Result.Size = new Size(544, 630);
             Result.TabIndex = 5;
             Result.TextAlign = HorizontalAlignment.Center;
             // 
@@ -154,7 +154,7 @@
             ResultText.AutoSize = true;
             ResultText.BackColor = Color.FromArgb(0, 0, 192);
             ResultText.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ResultText.Location = new Point(1000, 654);
+            ResultText.Location = new Point(998, 634);
             ResultText.Name = "ResultText";
             ResultText.Size = new Size(198, 54);
             ResultText.TabIndex = 10;
