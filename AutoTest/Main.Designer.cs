@@ -52,7 +52,7 @@
             StartAction.Location = new Point(318, 623);
             StartAction.Margin = new Padding(3, 2, 3, 2);
             StartAction.Name = "StartAction";
-            StartAction.Size = new Size(348, 106);
+            StartAction.Size = new Size(342, 64);
             StartAction.TabIndex = 0;
             StartAction.Text = "Empezar";
             StartAction.UseVisualStyleBackColor = true;
@@ -102,10 +102,10 @@
             // Result
             // 
             Result.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            Result.Location = new Point(862, 1);
+            Result.Location = new Point(814, 1);
             Result.Multiline = true;
             Result.Name = "Result";
-            Result.Size = new Size(683, 630);
+            Result.Size = new Size(560, 630);
             Result.TabIndex = 5;
             Result.TextAlign = HorizontalAlignment.Center;
             // 
@@ -154,7 +154,7 @@
             ResultText.AutoSize = true;
             ResultText.BackColor = Color.FromArgb(0, 0, 192);
             ResultText.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ResultText.Location = new Point(1083, 659);
+            ResultText.Location = new Point(1000, 654);
             ResultText.Name = "ResultText";
             ResultText.Size = new Size(198, 54);
             ResultText.TabIndex = 10;
@@ -164,7 +164,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1537, 845);
+            ClientSize = new Size(1370, 749);
             Controls.Add(ResultText);
             Controls.Add(label4);
             Controls.Add(label3);

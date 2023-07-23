@@ -74,7 +74,7 @@ namespace AutoTest
                     ResultText.Text = "No Aprobado!!!";
                     ResultText.BackColor = Color.Red;
 
-                }    
+                }
             }
             else
             {
