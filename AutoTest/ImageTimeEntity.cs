@@ -2,7 +2,7 @@
 
 namespace AutoTest
 {
-    public class ImageTimeSelection
+    public class ImageTimeEntity
     {
         private DateTime StartTime;
         private DateTime FinishTime;

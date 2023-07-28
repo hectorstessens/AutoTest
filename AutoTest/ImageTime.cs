@@ -2,11 +2,11 @@ using System.Linq.Expressions;
 
 namespace AutoTest
 {
-    public partial class Main : Form
+    public partial class ImageTime : Form
     {
-        ImageTimeSelection ImageTimeSelection = new ImageTimeSelection();
+        ImageTimeEntity ImageTimeSelection = new ImageTimeEntity();
         int NumberImage = 0;
-        public Main()
+        public ImageTime()
         {
             InitializeComponent();
         }
@@ -21,7 +21,6 @@ namespace AutoTest
             Clean();
             this.ImageTimeSelection.Start();
             this.ShowImage();
-
         }
 
         private void Clean()
@@ -127,6 +126,13 @@ namespace AutoTest
                 this.ShowImage();
                 this.ShowResult();
             }
+        }
+
+        private void MoveBallButton_Click(object sender, EventArgs e)
+        {
+            BallMove frm = new BallMove();
+            frm.Show();
+            this.Hide();
         }
     }
 }
