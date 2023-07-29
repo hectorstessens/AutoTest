@@ -16,7 +16,7 @@ namespace AutoTest
         
         public bool FinishResult() 
         {
-            if (SecondsAverage < 4 && TotalCorrect >= 18)
+            if (SecondsAverage < 4 && TotalCorrect >= 16)
                 return true;
             else
                 return false;
@@ -27,6 +27,7 @@ namespace AutoTest
             this.StartTime = DateTime.Now;
             this.CurrentIteration = 0;
             this.IsFinish = false;
+            this.SecondTotal = 0;
         }
 
         public int GetRandomNumber()
