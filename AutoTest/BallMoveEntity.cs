@@ -10,6 +10,7 @@ namespace AutoTest
         public int Level { get; private set; } = 1;
 
         public bool IsFinish { get { return this.Level == this.LevelTotal ; } }
+        private int Correct = 7;
 
         public List<BallMoveRow> BallMoveRows { get; set; } = new List<BallMoveRow>();
 
@@ -48,7 +49,7 @@ namespace AutoTest
 
         public bool FinishResult()
         {
-            if (this.BallMoveRows.Where(m => m.IsOk(this.Finish)).ToList().Count > 4)
+            if (this.BallMoveRows.Where(m => m.IsOk(this.Finish)).ToList().Count > Correct)
                 return true;
             else
                 return false;

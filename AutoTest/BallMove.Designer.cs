@@ -69,10 +69,11 @@
             // 
             // StartButton
             // 
+            StartButton.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
             StartButton.Location = new Point(205, 865);
             StartButton.Margin = new Padding(3, 4, 3, 4);
             StartButton.Name = "StartButton";
-            StartButton.Size = new Size(269, 64);
+            StartButton.Size = new Size(269, 76);
             StartButton.TabIndex = 3;
             StartButton.Text = "Start";
             StartButton.UseVisualStyleBackColor = true;
@@ -100,7 +101,7 @@
             // Result
             // 
             Result.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            Result.Location = new Point(1212, 133);
+            Result.Location = new Point(1214, 133);
             Result.Margin = new Padding(3, 4, 3, 4);
             Result.Multiline = true;
             Result.Name = "Result";

@@ -6,19 +6,36 @@ namespace AutoTest
     {
         int Finish = 0;
         int velocity = 2;
+        bool invertFlag = true;
+        int CirclePosition;
 
+        int ShapeLocationOriginal;
+        int ResultLocationOriginal;
+        int CircleLocationOriginal;
         public BallMoveEntity BallMoveEntity = new BallMoveEntity();
+
+
         public BallMove()
         {
             InitializeComponent();
 
             this.Finish = Shape.Location.X + Shape.Width;
             this.BallMoveEntity.Finish = Finish;
+            this.CirclePosition = this.Circle.Location.X;
+
+            ShapeLocationOriginal = Shape.Location.X;
+            ResultLocationOriginal = Result.Location.X;
+            CircleLocationOriginal = Circle.Location.X;
+
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            Circle.Location = new Point(Circle.Location.X + velocity, Circle.Location.Y);
+            if (invertFlag)
+                Circle.Location = new Point(Circle.Location.X + velocity, Circle.Location.Y);
+            else
+                Circle.Location = new Point(Circle.Location.X - velocity, Circle.Location.Y);
+
             locationText.Text = $"Finish: {Finish} Location: {Circle.Location.X}";
         }
 
@@ -49,7 +66,14 @@ namespace AutoTest
                 this.ShowResult();
 
                 this.BallMoveEntity.Clean();
+
+                Invert();
+
                 this.velocity = 2;
+                this.Finish = Shape.Location.X + (invertFlag ? Shape.Width : 0);
+                this.BallMoveEntity.Finish = Finish;
+
+
                 return;
             }
 
@@ -63,7 +87,7 @@ namespace AutoTest
                 }
 
                 this.Timer.Stop();
-                this.Circle.Location = new Point(32, Circle.Location.Y);
+                this.Circle.Location = new Point(CirclePosition, Circle.Location.Y);
             }
             else
             {
@@ -109,6 +133,28 @@ namespace AutoTest
             ImageTime frm = new ImageTime();
             frm.Show();
             this.Hide();
+        }
+
+        public void Invert()
+        {
+            invertFlag = !invertFlag;
+            if (invertFlag)
+            {
+                Circle.Location = new Point(CircleLocationOriginal, Circle.Location.Y);
+                Result.Location = new Point(ResultLocationOriginal, Result.Location.Y);
+                Shape.Location = new Point(ShapeLocationOriginal, Result.Location.Y);
+            }
+            else
+            {
+                int ResultLocation = Result.Location.X;
+                int CircleLocation = Circle.Location.X;
+
+                Circle.Location = new Point(ResultLocation + Result.Width, Circle.Location.Y);
+                Result.Location = new Point(CircleLocation, Result.Location.Y);
+                Shape.Location = new Point(CircleLocation + Result.Width, Result.Location.Y);
+            }
+
+            CirclePosition = Circle.Location.X;
         }
     }
 }

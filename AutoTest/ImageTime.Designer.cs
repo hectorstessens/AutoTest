@@ -71,7 +71,7 @@
             // CircleImg2
             // 
             CircleImg2.Image = (Image)resources.GetObject("CircleImg2.Image");
-            CircleImg2.Location = new Point(593, 15);
+            CircleImg2.Location = new Point(568, 15);
             CircleImg2.Name = "CircleImg2";
             CircleImg2.Size = new Size(258, 304);
             CircleImg2.TabIndex = 2;
@@ -89,7 +89,7 @@
             // SquareImg4
             // 
             SquareImg4.Image = (Image)resources.GetObject("SquareImg4.Image");
-            SquareImg4.Location = new Point(593, 449);
+            SquareImg4.Location = new Point(568, 449);
             SquareImg4.Name = "SquareImg4";
             SquareImg4.Size = new Size(272, 285);
             SquareImg4.TabIndex = 4;
@@ -120,7 +120,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(621, 368);
+            label2.Location = new Point(568, 368);
             label2.Name = "label2";
             label2.Size = new Size(290, 46);
             label2.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(609, 759);
+            label4.Location = new Point(577, 759);
             label4.Name = "label4";
             label4.Size = new Size(347, 46);
             label4.TabIndex = 9;
@@ -151,7 +151,7 @@
             ResultText.AutoSize = true;
             ResultText.BackColor = Color.FromArgb(0, 0, 192);
             ResultText.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ResultText.Location = new Point(1141, 845);
+            ResultText.Location = new Point(1043, 847);
             ResultText.Name = "ResultText";
             ResultText.Size = new Size(245, 67);
             ResultText.TabIndex = 10;
@@ -160,7 +160,7 @@
             // MoveBallButton
             // 
             MoveBallButton.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            MoveBallButton.Location = new Point(1415, 847);
+            MoveBallButton.Location = new Point(1384, 845);
             MoveBallButton.Margin = new Padding(3, 4, 3, 4);
             MoveBallButton.Name = "MoveBallButton";
             MoveBallButton.Size = new Size(167, 69);
