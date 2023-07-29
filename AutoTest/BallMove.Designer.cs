@@ -144,8 +144,10 @@
             Name = "BallMove";
             Text = "BallMove";
             WindowState = FormWindowState.Maximized;
+            FormClosed += BallMove_FormClosed;
             Load += BallMove_Load;
             KeyDown += BallMove_KeyDown;
+            Leave += BallMove_Leave;
             ((System.ComponentModel.ISupportInitialize)Circle).EndInit();
             ResumeLayout(false);
             PerformLayout();

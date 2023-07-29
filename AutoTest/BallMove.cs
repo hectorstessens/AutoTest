@@ -1,5 +1,8 @@
 ﻿
 
+using System.Diagnostics.Eventing.Reader;
+using System.Security.Cryptography;
+
 namespace AutoTest
 {
     public partial class BallMove : Form
@@ -14,10 +17,10 @@ namespace AutoTest
         int CircleLocationOriginal;
         public BallMoveEntity BallMoveEntity = new BallMoveEntity();
 
-
         public BallMove()
         {
             InitializeComponent();
+
 
             this.Finish = Shape.Location.X + Shape.Width - Circle.Width;
             this.BallMoveEntity.Finish = Finish;
@@ -130,10 +133,24 @@ namespace AutoTest
 
         private void ImageButton_Click(object sender, EventArgs e)
         {
-            ImageTime frm = new ImageTime();
-            frm.Show();
-            this.Hide();
+            this.Visible = false;
+
+            if (Application.OpenForms
+            .OfType<ImageTime>()
+            .ToList().Count == 0)
+            {
+                ImageTime frm = new ImageTime();
+                frm.Show();
+            }
+            else
+            {
+                Application.OpenForms
+                .OfType<ImageTime>()
+                .ToList()
+                .ForEach(form => form.Visible = true);
+            }
         }
+
 
         public void Invert()
         {
@@ -155,6 +172,15 @@ namespace AutoTest
             }
 
             CirclePosition = Circle.Location.X;
+        }
+
+        private void BallMove_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void BallMove_Leave(object sender, EventArgs e)
+        {
         }
     }
 }

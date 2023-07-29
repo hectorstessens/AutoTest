@@ -50,9 +50,10 @@
             // StartAction
             // 
             StartAction.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            StartAction.Location = new Point(363, 831);
+            StartAction.Location = new Point(318, 623);
+            StartAction.Margin = new Padding(3, 2, 3, 2);
             StartAction.Name = "StartAction";
-            StartAction.Size = new Size(391, 85);
+            StartAction.Size = new Size(342, 64);
             StartAction.TabIndex = 0;
             StartAction.Text = "Empezar";
             StartAction.UseVisualStyleBackColor = true;
@@ -62,47 +63,50 @@
             // StarImg1
             // 
             StarImg1.Image = (Image)resources.GetObject("StarImg1.Image");
-            StarImg1.Location = new Point(209, 15);
+            StarImg1.Location = new Point(183, 11);
+            StarImg1.Margin = new Padding(3, 2, 3, 2);
             StarImg1.Name = "StarImg1";
-            StarImg1.Size = new Size(269, 285);
+            StarImg1.Size = new Size(235, 214);
             StarImg1.TabIndex = 1;
             StarImg1.TabStop = false;
             // 
             // CircleImg2
             // 
             CircleImg2.Image = (Image)resources.GetObject("CircleImg2.Image");
-            CircleImg2.Location = new Point(568, 15);
+            CircleImg2.Location = new Point(497, 11);
+            CircleImg2.Margin = new Padding(3, 2, 3, 2);
             CircleImg2.Name = "CircleImg2";
-            CircleImg2.Size = new Size(258, 304);
+            CircleImg2.Size = new Size(226, 228);
             CircleImg2.TabIndex = 2;
             CircleImg2.TabStop = false;
             // 
             // TriangleImg3
             // 
             TriangleImg3.Image = (Image)resources.GetObject("TriangleImg3.Image");
-            TriangleImg3.Location = new Point(209, 429);
+            TriangleImg3.Location = new Point(183, 322);
+            TriangleImg3.Margin = new Padding(3, 2, 3, 2);
             TriangleImg3.Name = "TriangleImg3";
-            TriangleImg3.Size = new Size(258, 305);
+            TriangleImg3.Size = new Size(226, 229);
             TriangleImg3.TabIndex = 3;
             TriangleImg3.TabStop = false;
             // 
             // SquareImg4
             // 
             SquareImg4.Image = (Image)resources.GetObject("SquareImg4.Image");
-            SquareImg4.Location = new Point(568, 449);
+            SquareImg4.Location = new Point(497, 337);
+            SquareImg4.Margin = new Padding(3, 2, 3, 2);
             SquareImg4.Name = "SquareImg4";
-            SquareImg4.Size = new Size(272, 285);
+            SquareImg4.Size = new Size(238, 214);
             SquareImg4.TabIndex = 4;
             SquareImg4.TabStop = false;
             // 
             // Result
             // 
             Result.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            Result.Location = new Point(930, 1);
-            Result.Margin = new Padding(3, 4, 3, 4);
+            Result.Location = new Point(814, 1);
             Result.Multiline = true;
             Result.Name = "Result";
-            Result.Size = new Size(621, 839);
+            Result.Size = new Size(544, 630);
             Result.TabIndex = 5;
             Result.TextAlign = HorizontalAlignment.Center;
             // 
@@ -110,9 +114,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(233, 368);
+            label1.Location = new Point(204, 276);
             label1.Name = "label1";
-            label1.Size = new Size(304, 46);
+            label1.Size = new Size(243, 37);
             label1.TabIndex = 6;
             label1.Text = "Mano Izquierda - 1";
             // 
@@ -120,9 +124,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(568, 368);
+            label2.Location = new Point(497, 276);
             label2.Name = "label2";
-            label2.Size = new Size(290, 46);
+            label2.Size = new Size(230, 37);
             label2.TabIndex = 7;
             label2.Text = "Mano Derecha - 2";
             // 
@@ -130,9 +134,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(233, 759);
+            label3.Location = new Point(204, 569);
             label3.Name = "label3";
-            label3.Size = new Size(265, 46);
+            label3.Size = new Size(212, 37);
             label3.TabIndex = 8;
             label3.Text = "Pie Izquierdo - 3";
             // 
@@ -140,9 +144,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(577, 759);
+            label4.Location = new Point(505, 569);
             label4.Name = "label4";
-            label4.Size = new Size(347, 46);
+            label4.Size = new Size(275, 37);
             label4.TabIndex = 9;
             label4.Text = "Derecho Izquierdo - 4";
             // 
@@ -151,19 +155,18 @@
             ResultText.AutoSize = true;
             ResultText.BackColor = Color.FromArgb(0, 0, 192);
             ResultText.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ResultText.Location = new Point(1043, 847);
+            ResultText.Location = new Point(913, 635);
             ResultText.Name = "ResultText";
-            ResultText.Size = new Size(245, 67);
+            ResultText.Size = new Size(198, 54);
             ResultText.TabIndex = 10;
             ResultText.Text = "Resultado";
             // 
             // MoveBallButton
             // 
             MoveBallButton.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            MoveBallButton.Location = new Point(1384, 845);
-            MoveBallButton.Margin = new Padding(3, 4, 3, 4);
+            MoveBallButton.Location = new Point(1211, 634);
             MoveBallButton.Name = "MoveBallButton";
-            MoveBallButton.Size = new Size(167, 69);
+            MoveBallButton.Size = new Size(146, 52);
             MoveBallButton.TabIndex = 11;
             MoveBallButton.Text = "Pelotita";
             MoveBallButton.UseVisualStyleBackColor = true;
@@ -171,9 +174,9 @@
             // 
             // ImageTime
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1566, 999);
+            ClientSize = new Size(1199, 562);
             Controls.Add(MoveBallButton);
             Controls.Add(ResultText);
             Controls.Add(label4);
@@ -186,10 +189,12 @@
             Controls.Add(CircleImg2);
             Controls.Add(StarImg1);
             Controls.Add(StartAction);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ImageTime";
             Text = "Auto Test";
             WindowState = FormWindowState.Maximized;
             KeyDown += Main_KeyDown;
+            Leave += ImageTime_Leave;
             ((System.ComponentModel.ISupportInitialize)StarImg1).EndInit();
             ((System.ComponentModel.ISupportInitialize)CircleImg2).EndInit();
             ((System.ComponentModel.ISupportInitialize)TriangleImg3).EndInit();

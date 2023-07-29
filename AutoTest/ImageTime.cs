@@ -130,9 +130,26 @@ namespace AutoTest
 
         private void MoveBallButton_Click(object sender, EventArgs e)
         {
-            BallMove frm = new BallMove();
-            frm.Show();
-            this.Hide();
+            this.Visible = false;
+
+            if (Application.OpenForms
+            .OfType<BallMove>()
+            .ToList().Count == 0)
+            {
+                BallMove frm = new BallMove();
+                frm.Show();
+            }
+            else
+            {
+                Application.OpenForms
+                .OfType<BallMove>()
+                .ToList()
+                .ForEach(form => form.Visible = true);
+            }
+        }
+
+        private void ImageTime_Leave(object sender, EventArgs e)
+        {
         }
     }
 }
