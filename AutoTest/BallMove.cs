@@ -19,7 +19,7 @@ namespace AutoTest
         {
             InitializeComponent();
 
-            this.Finish = Shape.Location.X + Shape.Width;
+            this.Finish = Shape.Location.X + Shape.Width - Circle.Width;
             this.BallMoveEntity.Finish = Finish;
             this.CirclePosition = this.Circle.Location.X;
 
@@ -70,7 +70,7 @@ namespace AutoTest
                 Invert();
 
                 this.velocity = 2;
-                this.Finish = Shape.Location.X + (invertFlag ? Shape.Width : 0);
+                this.Finish = Shape.Location.X + (invertFlag ? Shape.Width - Circle.Width : 0);
                 this.BallMoveEntity.Finish = Finish;
 
 

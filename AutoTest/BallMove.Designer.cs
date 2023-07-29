@@ -50,19 +50,17 @@
             // Shape
             // 
             Shape.BackColor = Color.Yellow;
-            Shape.Location = new Point(740, 133);
-            Shape.Margin = new Padding(3, 4, 3, 4);
+            Shape.Location = new Point(648, 100);
             Shape.Name = "Shape";
-            Shape.Size = new Size(472, 695);
+            Shape.Size = new Size(413, 521);
             Shape.TabIndex = 2;
             // 
             // Circle
             // 
             Circle.Image = (Image)resources.GetObject("Circle.Image");
-            Circle.Location = new Point(32, 413);
-            Circle.Margin = new Padding(3, 4, 3, 4);
+            Circle.Location = new Point(28, 310);
             Circle.Name = "Circle";
-            Circle.Size = new Size(77, 84);
+            Circle.Size = new Size(67, 63);
             Circle.SizeMode = PictureBoxSizeMode.StretchImage;
             Circle.TabIndex = 2;
             Circle.TabStop = false;
@@ -70,10 +68,9 @@
             // StartButton
             // 
             StartButton.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            StartButton.Location = new Point(205, 865);
-            StartButton.Margin = new Padding(3, 4, 3, 4);
+            StartButton.Location = new Point(179, 649);
             StartButton.Name = "StartButton";
-            StartButton.Size = new Size(269, 76);
+            StartButton.Size = new Size(235, 57);
             StartButton.TabIndex = 3;
             StartButton.Text = "Start";
             StartButton.UseVisualStyleBackColor = true;
@@ -83,29 +80,28 @@
             // locationText
             // 
             locationText.AutoSize = true;
-            locationText.Location = new Point(56, 43);
+            locationText.Location = new Point(28, 9);
             locationText.Name = "locationText";
-            locationText.Size = new Size(66, 20);
+            locationText.Size = new Size(53, 15);
             locationText.TabIndex = 4;
             locationText.Text = "Location";
             // 
             // Level
             // 
             Level.AutoSize = true;
-            Level.Location = new Point(243, 43);
+            Level.Location = new Point(225, 9);
             Level.Name = "Level";
-            Level.Size = new Size(58, 20);
+            Level.Size = new Size(46, 15);
             Level.TabIndex = 5;
             Level.Text = "Nivel: 1";
             // 
             // Result
             // 
             Result.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            Result.Location = new Point(1214, 133);
-            Result.Margin = new Padding(3, 4, 3, 4);
+            Result.Location = new Point(1061, 100);
             Result.Multiline = true;
             Result.Name = "Result";
-            Result.Size = new Size(362, 695);
+            Result.Size = new Size(317, 522);
             Result.TabIndex = 6;
             Result.TextAlign = HorizontalAlignment.Center;
             // 
@@ -114,19 +110,18 @@
             ResultText.AutoSize = true;
             ResultText.BackColor = Color.FromArgb(0, 0, 192);
             ResultText.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ResultText.Location = new Point(872, 857);
+            ResultText.Location = new Point(763, 643);
             ResultText.Name = "ResultText";
-            ResultText.Size = new Size(245, 67);
+            ResultText.Size = new Size(198, 54);
             ResultText.TabIndex = 11;
             ResultText.Text = "Resultado";
             // 
             // ImageButton
             // 
             ImageButton.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            ImageButton.Location = new Point(1289, 855);
-            ImageButton.Margin = new Padding(3, 4, 3, 4);
+            ImageButton.Location = new Point(1128, 641);
             ImageButton.Name = "ImageButton";
-            ImageButton.Size = new Size(186, 69);
+            ImageButton.Size = new Size(163, 52);
             ImageButton.TabIndex = 12;
             ImageButton.Text = "Imagenes";
             ImageButton.UseVisualStyleBackColor = true;
@@ -134,10 +129,10 @@
             // 
             // BallMove
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1746, 954);
+            ClientSize = new Size(1199, 562);
             Controls.Add(ImageButton);
             Controls.Add(ResultText);
             Controls.Add(Result);
@@ -146,7 +141,6 @@
             Controls.Add(Shape);
             Controls.Add(StartButton);
             Controls.Add(Circle);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "BallMove";
             Text = "BallMove";
             WindowState = FormWindowState.Maximized;
@@ -168,5 +162,7 @@
         private TextBox Result;
         private Label ResultText;
         private Button ImageButton;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
