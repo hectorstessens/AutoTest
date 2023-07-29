@@ -68,7 +68,7 @@
             // StartButton
             // 
             StartButton.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            StartButton.Location = new Point(179, 649);
+            StartButton.Location = new Point(186, 624);
             StartButton.Name = "StartButton";
             StartButton.Size = new Size(235, 57);
             StartButton.TabIndex = 3;
@@ -110,7 +110,7 @@
             ResultText.AutoSize = true;
             ResultText.BackColor = Color.FromArgb(0, 0, 192);
             ResultText.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ResultText.Location = new Point(763, 643);
+            ResultText.Location = new Point(762, 624);
             ResultText.Name = "ResultText";
             ResultText.Size = new Size(198, 54);
             ResultText.TabIndex = 11;
@@ -119,7 +119,7 @@
             // ImageButton
             // 
             ImageButton.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            ImageButton.Location = new Point(1128, 641);
+            ImageButton.Location = new Point(1127, 630);
             ImageButton.Name = "ImageButton";
             ImageButton.Size = new Size(163, 52);
             ImageButton.TabIndex = 12;
@@ -132,7 +132,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1199, 562);
+            ClientSize = new Size(1348, 749);
             Controls.Add(ImageButton);
             Controls.Add(ResultText);
             Controls.Add(Result);
