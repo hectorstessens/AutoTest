@@ -71,8 +71,8 @@ namespace AutoTest
 
         public bool IsOk(int finish) 
         {
-            int positionMax = Position + 100;
-            int positionMin = Position - 100;
+            int positionMax = Position + 50;
+            int positionMin = Position - 50;
 
             return  finish > positionMin && finish < positionMax;
         }

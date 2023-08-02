@@ -16,7 +16,7 @@ namespace AutoTest
         
         public bool FinishResult() 
         {
-            if (SecondsAverage < 4 && TotalCorrect >= 16)
+            if (SecondsAverage < 2 && TotalCorrect >= 17)
                 return true;
             else
                 return false;
