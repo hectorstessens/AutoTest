@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageTime));
             StartAction = new Button();
-            StarImg1 = new PictureBox();
-            CircleImg2 = new PictureBox();
-            TriangleImg3 = new PictureBox();
-            SquareImg4 = new PictureBox();
+            imgVoice = new PictureBox();
+            imgRedCircle = new PictureBox();
+            imgCross = new PictureBox();
+            imgCircleGreen = new PictureBox();
             Result = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -41,10 +41,11 @@
             label4 = new Label();
             ResultText = new Label();
             MoveBallButton = new Button();
-            ((System.ComponentModel.ISupportInitialize)StarImg1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)CircleImg2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)TriangleImg3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)SquareImg4).BeginInit();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)imgVoice).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgRedCircle).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgCross).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgCircleGreen).BeginInit();
             SuspendLayout();
             // 
             // StartAction
@@ -59,41 +60,45 @@
             StartAction.Click += StartAction_Click;
             StartAction.KeyDown += StartAction_KeyDown;
             // 
-            // StarImg1
+            // imgVoice
             // 
-            StarImg1.Image = (Image)resources.GetObject("StarImg1.Image");
-            StarImg1.Location = new Point(291, 295);
-            StarImg1.Name = "StarImg1";
-            StarImg1.Size = new Size(269, 285);
-            StarImg1.TabIndex = 1;
-            StarImg1.TabStop = false;
+            imgVoice.Image = (Image)resources.GetObject("imgVoice.Image");
+            imgVoice.Location = new Point(302, 275);
+            imgVoice.Name = "imgVoice";
+            imgVoice.Size = new Size(248, 239);
+            imgVoice.SizeMode = PictureBoxSizeMode.StretchImage;
+            imgVoice.TabIndex = 1;
+            imgVoice.TabStop = false;
             // 
-            // CircleImg2
+            // imgRedCircle
             // 
-            CircleImg2.Image = (Image)resources.GetObject("CircleImg2.Image");
-            CircleImg2.Location = new Point(294, 295);
-            CircleImg2.Name = "CircleImg2";
-            CircleImg2.Size = new Size(258, 304);
-            CircleImg2.TabIndex = 2;
-            CircleImg2.TabStop = false;
+            imgRedCircle.Image = (Image)resources.GetObject("imgRedCircle.Image");
+            imgRedCircle.Location = new Point(302, 275);
+            imgRedCircle.Name = "imgRedCircle";
+            imgRedCircle.Size = new Size(248, 239);
+            imgRedCircle.SizeMode = PictureBoxSizeMode.StretchImage;
+            imgRedCircle.TabIndex = 2;
+            imgRedCircle.TabStop = false;
             // 
-            // TriangleImg3
+            // imgCross
             // 
-            TriangleImg3.Image = (Image)resources.GetObject("TriangleImg3.Image");
-            TriangleImg3.Location = new Point(291, 295);
-            TriangleImg3.Name = "TriangleImg3";
-            TriangleImg3.Size = new Size(258, 305);
-            TriangleImg3.TabIndex = 3;
-            TriangleImg3.TabStop = false;
+            imgCross.Image = (Image)resources.GetObject("imgCross.Image");
+            imgCross.Location = new Point(302, 275);
+            imgCross.Name = "imgCross";
+            imgCross.Size = new Size(248, 239);
+            imgCross.SizeMode = PictureBoxSizeMode.StretchImage;
+            imgCross.TabIndex = 3;
+            imgCross.TabStop = false;
             // 
-            // SquareImg4
+            // imgCircleGreen
             // 
-            SquareImg4.Image = (Image)resources.GetObject("SquareImg4.Image");
-            SquareImg4.Location = new Point(291, 295);
-            SquareImg4.Name = "SquareImg4";
-            SquareImg4.Size = new Size(272, 285);
-            SquareImg4.TabIndex = 4;
-            SquareImg4.TabStop = false;
+            imgCircleGreen.Image = (Image)resources.GetObject("imgCircleGreen.Image");
+            imgCircleGreen.Location = new Point(302, 275);
+            imgCircleGreen.Name = "imgCircleGreen";
+            imgCircleGreen.Size = new Size(248, 239);
+            imgCircleGreen.SizeMode = PictureBoxSizeMode.StretchImage;
+            imgCircleGreen.TabIndex = 4;
+            imgCircleGreen.TabStop = false;
             // 
             // Result
             // 
@@ -112,40 +117,40 @@
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(12, 15);
             label1.Name = "label1";
-            label1.Size = new Size(176, 46);
+            label1.Size = new Size(405, 46);
             label1.TabIndex = 6;
-            label1.Text = "Estrella - 1";
+            label1.Text = "Q - Izquierda Circulo Rojo";
             label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(218, 15);
+            label2.Location = new Point(12, 93);
             label2.Name = "label2";
-            label2.Size = new Size(174, 46);
+            label2.Size = new Size(326, 46);
             label2.TabIndex = 7;
-            label2.Text = "Circulo - 2";
+            label2.Text = "Z - Izquierda Vocina ";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(413, 15);
+            label3.Location = new Point(510, 15);
             label3.Name = "label3";
-            label3.Size = new Size(208, 46);
+            label3.Size = new Size(403, 46);
             label3.TabIndex = 8;
-            label3.Text = "Triangulo - 3";
+            label3.Text = "9 - Derecha Circulo Verde";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(636, 15);
+            label4.Location = new Point(510, 93);
             label4.Name = "label4";
-            label4.Size = new Size(216, 46);
+            label4.Size = new Size(270, 46);
             label4.TabIndex = 9;
-            label4.Text = "Cuadrado - 4";
+            label4.Text = "3 - Derecha Cruz";
             // 
             // ResultText
             // 
@@ -170,11 +175,20 @@
             MoveBallButton.UseVisualStyleBackColor = true;
             MoveBallButton.Click += MoveBallButton_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(436, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(48, 160);
+            panel1.TabIndex = 12;
+            // 
             // ImageTime
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1521, 894);
+            Controls.Add(panel1);
             Controls.Add(MoveBallButton);
             Controls.Add(ResultText);
             Controls.Add(label4);
@@ -182,20 +196,20 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Result);
-            Controls.Add(SquareImg4);
-            Controls.Add(TriangleImg3);
-            Controls.Add(CircleImg2);
-            Controls.Add(StarImg1);
+            Controls.Add(imgCircleGreen);
+            Controls.Add(imgCross);
+            Controls.Add(imgRedCircle);
+            Controls.Add(imgVoice);
             Controls.Add(StartAction);
             Name = "ImageTime";
             Text = "Auto Test";
             WindowState = FormWindowState.Maximized;
             KeyDown += Main_KeyDown;
             Leave += ImageTime_Leave;
-            ((System.ComponentModel.ISupportInitialize)StarImg1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)CircleImg2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)TriangleImg3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)SquareImg4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgVoice).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgRedCircle).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgCross).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgCircleGreen).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -203,10 +217,10 @@
         #endregion
 
         private Button StartAction;
-        private PictureBox StarImg1;
-        private PictureBox CircleImg2;
-        private PictureBox TriangleImg3;
-        private PictureBox SquareImg4;
+        private PictureBox imgVoice;
+        private PictureBox imgRedCircle;
+        private PictureBox imgCross;
+        private PictureBox imgCircleGreen;
         private TextBox Result;
         private Label label1;
         private Label label2;
@@ -214,5 +228,6 @@
         private Label label4;
         private Label ResultText;
         private Button MoveBallButton;
+        private Panel panel1;
     }
 }

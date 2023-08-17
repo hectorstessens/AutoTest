@@ -4,6 +4,12 @@ namespace AutoTest
 {
     public partial class ImageTime : Form
     {
+
+        const int Voice = 1;
+        const int RedCircle = 2;
+        const int Cross = 3;
+        const int GreenCircle = 4;
+
         ImageTimeEntity ImageTimeSelection = new ImageTimeEntity();
         int NumberImage = 0;
         public ImageTime()
@@ -25,10 +31,10 @@ namespace AutoTest
 
         private void Clean()
         {
-            StarImg1.Visible = false;
-            CircleImg2.Visible = false;
-            TriangleImg3.Visible = false;
-            SquareImg4.Visible = false;
+            imgVoice.Visible = false;
+            imgRedCircle.Visible = false;
+            imgCross.Visible = false;
+            imgCircleGreen.Visible = false;
             Result.Text = string.Empty;
             ResultText.Text = "Resultado";
             ResultText.BackColor = Color.Gray;
@@ -42,16 +48,16 @@ namespace AutoTest
             switch (this.NumberImage)
             {
                 case 1:
-                    StarImg1.Visible = true;
+                    imgVoice.Visible = true;
                     break;
                 case 2:
-                    CircleImg2.Visible = true;
+                    imgRedCircle.Visible = true;
                     break;
                 case 3:
-                    TriangleImg3.Visible = true;
+                    imgCross.Visible = true;
                     break;
                 case 4:
-                    SquareImg4.Visible = true;
+                    imgCircleGreen.Visible = true;
                     break;
                 default:
                     break;
@@ -93,7 +99,7 @@ namespace AutoTest
 
         private void SelectImage(KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
             {
                 this.Start();
             }
@@ -106,17 +112,17 @@ namespace AutoTest
 
                 switch (e.KeyCode)
                 {
-                    case Keys.D1:
-                        number = 1;
+                    case Keys.Z:
+                        number = Voice;
                         break;
-                    case Keys.D2:
-                        number = 2;
+                    case Keys.Q:
+                        number = RedCircle;
                         break;
-                    case Keys.D3:
-                        number = 3;
+                    case Keys.NumPad3:
+                        number = Cross;
                         break;
-                    case Keys.D4:
-                        number = 4;
+                    case Keys.NumPad9:
+                        number = GreenCircle;
                         break;
                     default:
                         break;
