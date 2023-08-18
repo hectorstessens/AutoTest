@@ -78,7 +78,7 @@ namespace AutoTest
                 c++;
                 sb.AppendLine();
                 var seconds = (item.Date - PreviusTime).TotalSeconds;
-                sb.Append($"Iteración {c} segundos en respuesta {seconds.ToString()} , Correcto: {item.IsCorrect}");
+                sb.Append($"Iteración {c} segundos - {seconds.ToString()} , Correcto: {(item.IsCorrect ? "SI" : "NO")}");
                 PreviusTime = item.Date;
                 this.SecondTotal = this.SecondTotal + seconds;
             }
@@ -103,7 +103,7 @@ namespace AutoTest
                 c++;
                 sb.AppendLine();
                 var seconds = (PreviusTime - item.Date).TotalSeconds;
-                sb.Append($"Iteración {c} segundos en respuesta {seconds.ToString()} , Correcto: { item.IsCorrect }");
+                sb.Append($"Iteración {c} segundos {seconds.ToString()} , Correcto: { (item.IsCorrect ? "SI" : "NO")}");
                 PreviusTime = item.Date;
             }
 

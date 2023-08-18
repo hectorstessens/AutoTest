@@ -20,10 +20,12 @@ namespace AutoTest
         private void StartAction_Click(object sender, EventArgs e)
         {
             Start();
+            
         }
 
         private void Start()
         {
+            StartAction.Visible = false;
             Clean();
             this.ImageTimeSelection.Start();
             this.ShowImage();
@@ -69,6 +71,7 @@ namespace AutoTest
             if (this.ImageTimeSelection.IsFinish)
             {
                 Result.Text = this.ImageTimeSelection.Stop();
+                StartAction.Visible = true;
                 if (this.ImageTimeSelection.FinishResult())
                 {
                     ResultText.Text = "Aprobado!!!!!";
@@ -161,6 +164,11 @@ namespace AutoTest
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Result_KeyDown(object sender, KeyEventArgs e)
+        {
+            SelectImage(e);
         }
     }
 }

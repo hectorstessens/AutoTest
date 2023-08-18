@@ -110,6 +110,7 @@
             Result.Size = new Size(621, 839);
             Result.TabIndex = 5;
             Result.TextAlign = HorizontalAlignment.Center;
+            Result.KeyDown += Result_KeyDown;
             // 
             // label1
             // 
