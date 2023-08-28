@@ -42,6 +42,7 @@
             ResultText = new Label();
             MoveBallButton = new Button();
             panel1 = new Panel();
+            btnStarNight = new Button();
             ((System.ComponentModel.ISupportInitialize)imgVoice).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgRedCircle).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgCross).BeginInit();
@@ -184,11 +185,24 @@
             panel1.Size = new Size(48, 160);
             panel1.TabIndex = 12;
             // 
+            // btnStarNight
+            // 
+            btnStarNight.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStarNight.Location = new Point(1384, 922);
+            btnStarNight.Margin = new Padding(3, 4, 3, 4);
+            btnStarNight.Name = "btnStarNight";
+            btnStarNight.Size = new Size(167, 69);
+            btnStarNight.TabIndex = 13;
+            btnStarNight.Text = "Estrella";
+            btnStarNight.UseVisualStyleBackColor = true;
+            btnStarNight.Click += StarNight_Click;
+            // 
             // ImageTime
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1521, 894);
+            ClientSize = new Size(1602, 1055);
+            Controls.Add(btnStarNight);
             Controls.Add(panel1);
             Controls.Add(MoveBallButton);
             Controls.Add(ResultText);
@@ -230,5 +244,6 @@
         private Label ResultText;
         private Button MoveBallButton;
         private Panel panel1;
+        private Button btnStarNight;
     }
 }

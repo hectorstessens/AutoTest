@@ -20,7 +20,7 @@ namespace AutoTest
         private void StartAction_Click(object sender, EventArgs e)
         {
             Start();
-            
+
         }
 
         private void Start()
@@ -169,6 +169,26 @@ namespace AutoTest
         private void Result_KeyDown(object sender, KeyEventArgs e)
         {
             SelectImage(e);
+        }
+
+        private void StarNight_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+            if (Application.OpenForms
+            .OfType<StarNight>()
+            .ToList().Count == 0)
+            {
+                StarNight frm = new StarNight();
+                frm.Show();
+            }
+            else
+            {
+                Application.OpenForms
+                .OfType<StarNight>()
+                .ToList()
+                .ForEach(form => form.Visible = true);
+            }
         }
     }
 }
