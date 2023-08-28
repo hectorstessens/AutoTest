@@ -40,9 +40,10 @@
             // Star
             // 
             Star.Image = (Image)resources.GetObject("Star.Image");
-            Star.Location = new Point(376, 232);
+            Star.Location = new Point(329, 174);
+            Star.Margin = new Padding(3, 2, 3, 2);
             Star.Name = "Star";
-            Star.Size = new Size(24, 25);
+            Star.Size = new Size(21, 19);
             Star.SizeMode = PictureBoxSizeMode.StretchImage;
             Star.TabIndex = 0;
             Star.TabStop = false;
@@ -50,15 +51,16 @@
             // 
             // timer
             // 
-            timer.Interval = 2000;
+            timer.Interval = 1500;
             timer.Tick += timer_Tick;
             // 
             // btnEmpezar
             // 
             btnEmpezar.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEmpezar.Location = new Point(951, 602);
+            btnEmpezar.Location = new Point(467, 493);
+            btnEmpezar.Margin = new Padding(3, 2, 3, 2);
             btnEmpezar.Name = "btnEmpezar";
-            btnEmpezar.Size = new Size(279, 77);
+            btnEmpezar.Size = new Size(244, 58);
             btnEmpezar.TabIndex = 1;
             btnEmpezar.Text = "Empezar";
             btnEmpezar.UseVisualStyleBackColor = true;
@@ -70,22 +72,23 @@
             ResultLabel.AutoSize = true;
             ResultLabel.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             ResultLabel.ForeColor = Color.White;
-            ResultLabel.Location = new Point(25, 9);
+            ResultLabel.Location = new Point(22, 7);
             ResultLabel.Name = "ResultLabel";
-            ResultLabel.Size = new Size(110, 46);
+            ResultLabel.Size = new Size(88, 37);
             ResultLabel.TabIndex = 2;
             ResultLabel.Text = "Result";
             // 
             // StarNight
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1264, 859);
+            ClientSize = new Size(1106, 562);
             Controls.Add(ResultLabel);
             Controls.Add(btnEmpezar);
             Controls.Add(Star);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "StarNight";

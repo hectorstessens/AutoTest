@@ -60,7 +60,7 @@ namespace AutoTest
                 this.ResultLabel.Visible = true;
                 this.ResultLabel.Text = $"Total Vistos {countSee}; Total {countTotal - countNotVisible}";
                 this.timer.Enabled = false;
-                this.btnEmpezar.Visible = false;
+                this.btnEmpezar.Visible = true;
                 this.count = 0;
                 this.countSee = 0;
                 this.countNotVisible = 0;
